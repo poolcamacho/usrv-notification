@@ -1,0 +1,35 @@
+{
+  "Records": [
+    {
+      "eventID": "1",
+      "eventName": "INSERT",
+      "eventVersion": "1.0",
+      "eventSource": "aws:dynamodb",
+      "awsRegion": "us-east-1",
+      "dynamodb": {
+        "Keys": {
+          "PaymentID": {
+            "S": "payment1"
+          },
+          "UserID": {
+            "S": "user1"
+          }
+        },
+        "NewImage": {
+          "PaymentID": {
+            "S": "payment1"
+          },
+          "UserID": {
+            "S": "user1"
+          },
+          "Amount": {
+            "N": "100"
+          },
+          "Timestamp": {
+            "N": "1620264957"
+          }
+        }
+      }
+    }
+  ]
+}

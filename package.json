@@ -1,0 +1,26 @@
+{
+  "name": "usrv-notification",
+  "version": "1.0.0",
+  "description": "Lambda demo",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/poolcamacho/usrv-notification.git"
+  },
+  "author": "Pool Camacho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/poolcamacho/usrv-notification/issues"
+  },
+  "homepage": "https://github.com/poolcamacho/usrv-notification#readme",
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "axios": "^1.6.8"
+  },
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.40"
+  }
+}
