@@ -1,4 +1,4 @@
-service: usrv-notification
+service: usrv-notifications
 
 frameworkVersion: "3"
 
