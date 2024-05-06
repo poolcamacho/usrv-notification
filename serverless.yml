@@ -19,25 +19,3 @@ functions:
           arn: arn:aws:dynamodb:us-east-1:123456789012:table/usrv-payments/stream/LATEST
           batchSize: 100
           startingPosition: LATEST
-
-resources:
-  Resources:
-    usrvPaymentsTable:
-      Type: AWS::DynamoDB::Table
-      Properties:
-        TableName: usrv-payments
-        AttributeDefinitions:
-          - AttributeName: PaymentID
-            AttributeType: S
-          - AttributeName: UserID
-            AttributeType: S
-        KeySchema:
-          - AttributeName: PaymentID
-            KeyType: HASH
-          - AttributeName: UserID
-            KeyType: RANGE
-        ProvisionedThroughput:
-          ReadCapacityUnits: 5
-          WriteCapacityUnits: 5
-        StreamSpecification:
-          StreamViewType: NEW_AND_OLD_IMAGES
